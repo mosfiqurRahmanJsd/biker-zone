@@ -32,7 +32,8 @@
             --color-dark: rgba(0, 0, 0, 1);
             --color-semi-dark: rgba(0, 0, 0, 0.8);
             --color-light: rgba(255, 255, 255, 1);
-            --color-orange: rgba(231, 111, 81, 1);
+            --color-background-orange: rgba(231, 111, 81, 1);
+            --color-background-header: rgba(38, 70, 83, 1);
         }
     </style>
 
@@ -40,50 +41,76 @@
 
 </head>
 
-<body>
+<body class="font-poppins">
     <!-- Header Section -->
-    <header class="md:w-4/5 mx-auto">
-        <nav class="pt-6">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
+    <header class="bg-background-header">
+        <!-- nav section -->
+        <section class="md:w-4/5 mx-auto w-11/12">
+            <nav class="pt-6">
+                <div class="navbar max-sm:justify-end">
+                    <div class="navbar-start max-sm:justify-end">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost text-light lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-light rounded-box z-1 mt-3 w-52 p-2 shadow">
+                                <li><a>Home</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>News</a></li>
+                                <li><a>COntact</a></li>
+                            </ul>
                         </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><a>Home</a></li>
-                            <li><a>Shop</a></li>
-                            <li><a>News</a></li>
-                            <li><a>COntact</a></li>
-                        </ul>
+                        <a
+                            class="btn max-sm:hidden btn-ghost text-4xl text text-light hover:border-light hover:bg-light hover:shadow-none font-bold ps-0">Bike
+                            Zone</a>
                     </div>
-                    <a
-                        class="btn btn-ghost text-4xl text text-dark hover:border-light hover:bg-light hover:shadow-none font-bold">Bike
-                        Zone</a>
-                </div>
-                <div class="navbar-end hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a class="color-dark text-base px-6 font-medium">Home</a></li>
-                        <li><a class="color-dark text-base px-6 font-medium">Shop</a></li>
-                        <li><a class="color-dark text-base px-6 font-medium">News</a></li>
-                        <li><a class="color-dark text-base px-6 font-medium">Contact</a></li>
-                    </ul>
+                    <div class="navbar-end hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a class="text-light text-base px-6 font-medium">Home</a></li>
+                            <li><a class="text-light text-base px-6 font-medium">Shop</a></li>
+                            <li><a class="text-light text-base px-6 font-medium">News</a></li>
+                            <li><a class="text-light text-base px-6 font-medium">Contact</a></li>
+                        </ul>
 
-                    <a class="btn bg-orange py-6 text-xl font-bold text-light px-12">Login</a>
+                        <a class="btn bg-background-orange py-6 text-xl font-bold text-light border-0 shadow-none px-12">Login</a>
+
+                    </div>
 
                 </div>
+            </nav>
+        </section>
 
+        <!-- hero box section -->
+        <section class="md:w-4/5 mx-auto w-11/12 pt-11 ">
+            <div class="hero">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <div class="md:w-1/2">
+                        <img src="./images/others/honda-cbr-300r-2-removebg-preview 1.png"
+                        class="w-full" />
+                    </div>
+                    <div class="md:w-1/2 text-light">
+                        <p class="text-[14px] font-light mb-2.5">Computer-controlled digital transistorized with electronic advance</p>
+                        <h1 class="text-5xl font-medium mb-5">Honda CBR 300R</h1>
+                        <p class="text-base font-light mb-6">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <button class="btn bg-background-orange border-0 shadow-none text-light text-base font-medium py-2.5 px-11">Get Started</button>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </section>
+
+
+
     </header>
 
     <!-- Main section -->
     <main>
+
+
 
     </main>
 
